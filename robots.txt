@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://qualityfieldguides.com/sitemap.xml
