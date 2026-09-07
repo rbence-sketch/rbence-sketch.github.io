@@ -202,7 +202,7 @@ textarea{width:100%;min-height:180px;font:15px/1.45 Outfit,sans-serif;padding:14
 <textarea id="doc" maxlength="8000" placeholder="Paste up to 8,000 characters. Remove customer names if you prefer; the reading does not need them."></textarea>
 <div class="row"><button type="button" class="btn d" id="ai-go">Read it like an auditor</button><span class="fine" id="ai-fine">Sent once to the readout service, processed, and discarded. Not stored, not used for training.</span></div>
 <div class="msg" id="ai-msg"></div>
-<div id="ai-out" hidden><div class="score" style="margin-top:22px"><div><div class="big" style="font-size:40px">Read</div></div><div><h3>The auditor's reading</h3><p id="ai-overall"></p></div></div><div class="areas" id="ai-areas"></div><p class="fine" style="margin-top:14px" id="ai-disclaimer"></p></div>
+<div id="ai-out" hidden><div class="score" style="margin-top:22px"><div><div class="big" style="font-size:40px">Read</div></div><div><h3>The auditor's reading</h3><p id="ai-overall"></p></div></div><p class="fine" style="margin:14px 0 0"><b>How to read the tags.</b> Gap: the text itself shows the requirement unmet. Possible gap: the text is silent, which one page usually is; each card names the record that would settle it. No gap: the quoted evidence would satisfy an auditor.</p><div class="areas" id="ai-areas"></div><p class="fine" style="margin-top:14px" id="ai-disclaimer"></p></div>
 </div></section>
 
 <section id="next" hidden><div class="wrap">
@@ -355,7 +355,7 @@ $('ai-go').addEventListener('click',function(){
  .then(function(x){
   if(!x.ok||!x.j||!x.j.areas){throw new Error((x.j&&x.j.error)||'The readout service did not answer.')}
   $('ai-overall').textContent=x.j.overall||'';
-  $('ai-areas').innerHTML=x.j.areas.map(function(a){return '<div class="area"><div class="h"><h3>'+esc(a.title)+'</h3><span class="tag '+(a.gap==='gap'?'gap':a.gap==='none'?'none':'possible')+'">'+tagText(a.gap==='gap'?'gap':a.gap==='none'?'none':'possible')+'</span></div><p>'+esc(a.finding)+'</p>'+(a.evidence?'<div class="quote">“'+esc(a.evidence)+'”</div>':'<p class="sub">No evidence for this area in the text you pasted.</p>')+'<p><b>Action.</b> '+esc(a.action)+'</p></div>'}).join('');
+  $('ai-areas').innerHTML=x.j.areas.map(function(a){return '<div class="area"><div class="h"><h3>'+esc(a.title)+'</h3><span class="tag '+(a.gap==='gap'?'gap':a.gap==='none'?'none':'possible')+'">'+tagText(a.gap==='gap'?'gap':a.gap==='none'?'none':'possible')+'</span></div><p>'+esc(a.finding)+'</p>'+(a.evidence?'<div class="quote">“'+esc(a.evidence)+'”</div>':'<p class="sub">No evidence for this area in the text you pasted.</p>')+'<p><b>Action.</b> '+esc(a.action)+'</p>'+(a.confirm_with?'<p class="sub"><b>To settle it, paste next:</b> '+esc(a.confirm_with)+'</p>':'')+'</div>'}).join('');
   $('ai-disclaimer').textContent=x.j.disclaimer||'';$('ai-out').hidden=false;$('ai-msg').textContent='';
  })
  .catch(function(err){$('ai-msg').textContent='Could not get the reading: '+err.message+' The readout above still stands.'})
