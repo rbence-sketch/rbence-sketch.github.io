@@ -10,17 +10,17 @@
   gtag('config', 'G-8XPYC7VD4S');
 </script>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ISO 9001:2026 Gap Analysis: How to Score and Weight It</title>
-<meta name="description" content="How to do an ISO 9001:2026 gap analysis in an afternoon: the 0 to 3 scale, weighting by what changed, severity, and what to do with the result.">
+<title>How to Do an ISO 9001:2026 Gap Analysis: Method and Scoring</title>
+<meta name="description" content="The ISO 9001:2026 gap analysis method: the 0 to 3 scoring scale, weighting by what changed, the steps in order, and what the finished analysis produces.">
 <link rel="canonical" href="https://qualityfieldguides.com/iso-9001-2026/gap-analysis/">
 <meta property="og:site_name" content="QualityFieldGuides">
 <meta property="og:image" content="https://qualityfieldguides.com/img/og-1280x720.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta property="og:title" content="How to do an ISO 9001:2026 gap analysis (the scoring that tells you which gaps matter)">
-<meta property="og:description" content="How to do an ISO 9001:2026 gap analysis in an afternoon: the 0 to 3 scale, weighting by what changed, severity, and what to do with the result.">
+<meta property="og:title" content="How to Do an ISO 9001:2026 Gap Analysis: Method and Scoring">
+<meta property="og:description" content="The ISO 9001:2026 gap analysis method: the 0 to 3 scoring scale, weighting by what changed, the steps in order, and what the finished analysis produces.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://qualityfieldguides.com/iso-9001-2026/gap-analysis/">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to do an ISO 9001:2026 gap analysis", "datePublished": "2026-10-20", "dateModified": "2026-10-20", "author": {"@type": "Person", "name": "Ryan Bence", "jobTitle": "ISO 9001 Lead Auditor"}, "publisher": {"@type": "Organization", "name": "QualityFieldGuides"}, "mainEntityOfPage": "https://qualityfieldguides.com/iso-9001-2026/gap-analysis/", "description": "How to do an ISO 9001:2026 gap analysis in an afternoon: the 0 to 3 scale, weighting by what changed, severity, and what to do with the result."}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "How to do an ISO 9001:2026 gap analysis", "datePublished": "2026-10-20", "dateModified": "2026-10-29", "author": {"@type": "Person", "name": "Ryan Bence", "jobTitle": "ISO 9001 Lead Auditor"}, "publisher": {"@type": "Organization", "name": "QualityFieldGuides"}, "mainEntityOfPage": "https://qualityfieldguides.com/iso-9001-2026/gap-analysis/", "description": "How to do an ISO 9001:2026 gap analysis in an afternoon: the 0 to 3 scale, weighting by what changed, severity, and what to do with the result."}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is a certification body's free gap analysis checklist enough?", "acceptedAnswer": {"@type": "Answer", "text": "It finds gaps and stops there. A checklist cannot tell you that a modest gap on a requirement that changed in 2026 outranks a large gap on one that did not, and that is the judgment a transition audit tests. Score and weight, then rank."}}, {"@type": "Question", "name": "How long does an ISO 9001:2026 gap analysis take?", "acceptedAnswer": {"@type": "Answer", "text": "An afternoon for a mature single-site system if the change log has been read first: fifty-seven sub-clauses at three to five minutes each. Multi-site systems and systems that have drifted from the manual take longer, mostly in finding the evidence."}}, {"@type": "Question", "name": "Who should do it?", "acceptedAnswer": {"@type": "Answer", "text": "The quality manager scores; the process owners supply the evidence for their rows. A gap analysis scored alone in an office is scored against the manual, not against the floor, and the auditor audits the floor."}}, {"@type": "Question", "name": "Do I need the standard to do a gap analysis?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The requirements are in your organization's licensed copy of ISO 9001:2026. A gap analysis tool describes each requirement in its own words as a pointer; the scoring is done against the text, and the auditor will expect you to have it."}}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://qualityfieldguides.com/"}, {"@type": "ListItem", "position": 2, "name": "ISO 9001:2026", "item": "https://qualityfieldguides.com/iso-9001-2026/"}, {"@type": "ListItem", "position": 3, "name": "Gap analysis", "item": "https://qualityfieldguides.com/iso-9001-2026/gap-analysis/"}]}</script>
 
@@ -35,7 +35,7 @@
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap"></noscript>
 <style>
 :root{--slate:#1E2733;--panel:#26313F;--line:#39465A;--amber:#F5A623;--cream:#F5F2EB;--muted:#94A3B8;--ink:#141B24}
 *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
@@ -100,11 +100,21 @@ footer .author{display:block;font-size:14px;color:#94A3B8;padding:12px 24px 0}
 <p class="pill" style="margin-top:22px">ISO 9001:2026 · METHOD</p>
 <h1>How to do an ISO 9001:2026 gap analysis</h1>
 <p class="verified">Written from the auditor's side of the table. Clause numbers are pointers; the wording is ours, not the standard's. Last checked against the published ISO 9001:2026 text: October 12, 2026.</p>
-<p class="lede">Every certification body publishes a free ISO 9001 gap analysis checklist, and they are all the same document: a question per clause and a comments column. They find gaps and stop at exactly the point the work begins, because the work is deciding which gaps matter. In a transition year that decision has a rule: a modest gap on a requirement that changed outranks a large gap on one that did not. Here is the scoring that applies it.</p>
+<p class="lede">A gap analysis for ISO 9001:2026 is a structured comparison of what an organization does today against each requirement of the 2026 edition, with a score for the distance between the two. It is the first step of a transition from the 2015 edition, because it turns a 60-page standard into a ranked list of the specific things to fix before the certification body's transition audit. Done well, it takes an afternoon to a day for a small organization and produces a readiness number top management can track.</p>
+<p>Every certification body publishes a free ISO 9001 gap analysis checklist, and they are all the same document: a question per clause and a comments column. They find gaps and stop at exactly the point the work begins, because the work is deciding which gaps matter. In a transition year that decision has a rule: a modest gap on a requirement that changed outranks a large gap on one that did not. Here is the scoring that applies it.</p>
 <p class="meta tool-line">The tool that does this: the <a href="/tools/iso-9001-gap-analysis/">ISO 9001:2026 Gap Analysis and Transition Kit</a> ($57). The free <a href="/iso-9001-2026/what-changed/">change list</a> is the input.</p>
-<div class="toc"><h3>On this page</h3><ol><li><a href="#scale">The 0 to 3 scale</a></li><li><a href="#weight">Weighting by what changed</a></li><li><a href="#severity">Severity and priority gaps</a></li><li><a href="#afternoon">Doing it in an afternoon</a></li><li><a href="#example">Two worked rows</a></li><li><a href="#after">What to do with the result</a></li><li><a href="#faq">Questions</a></li></ol></div>
+<div class="toc"><h3>On this page</h3><ol><li><a href="#before">What you need before you start</a></li><li><a href="#scale">The 0 to 3 scale</a></li><li><a href="#weight">Weighting by what changed</a></li><li><a href="#severity">Severity and priority gaps</a></li><li><a href="#afternoon">The method, step by step</a></li><li><a href="#example">Two worked rows</a></li><li><a href="#produces">What a finished gap analysis produces</a></li><li><a href="#after">What to do with the result</a></li><li><a href="#spreadsheet">Doing it in a spreadsheet</a></li><li><a href="#faq">Questions</a></li></ol></div>
 </section>
-<section id="scale"><h2 class="first">The 0 to 3 scale</h2>
+<section id="before"><h2 class="first">What you need before you start</h2>
+<ul>
+<li><strong>The licensed copy of the 2026 edition.</strong> The analysis points at clauses; it cannot replace the text.</li>
+<li><strong>The current procedures, forms and registers,</strong> as they are used, not as the manual says they are.</li>
+<li><strong>The last two audit reports,</strong> internal and certification body. Open findings are gaps already scored for you.</li>
+<li><strong>The people who own the processes,</strong> for an hour each. Their rows are scored with them in the room.</li>
+<li><strong>The <a href="/iso-9001-2026/what-changed/">change list</a>,</strong> read first, so the scoring is against the 2026 text and not against the 2015 edition from memory.</li>
+</ul>
+</section>
+<section id="scale"><h2>The 0 to 3 scale</h2>
 <p>Score every sub-clause, 4.1 through 10.2, against the 2026 requirement as it reads in your licensed copy. Four scores, and the words matter more than the numbers:</p>
 <table><thead><tr><th>Score</th><th>Meaning</th><th>The test</th></tr></thead><tbody>
 <tr><td>0</td><td>Not addressed</td><td>The requirement is not met and no credible plan exists.</td></tr>
@@ -112,7 +122,7 @@ footer .author{display:block;font-size:14px;color:#94A3B8;padding:12px 24px 0}
 <tr><td>2</td><td>Addressed, not evidenced</td><td>The practice exists, but the records would not survive an audit.</td></tr>
 <tr><td>3</td><td>Conforming</td><td>Implemented and evidenced. An auditor could verify it today.</td></tr>
 </tbody></table>
-<p>Score 2 is the one that keeps a gap analysis honest. Most systems do most things; what they lack is the record that shows it. Scoring "we do that" as a 3 is how organizations arrive at the transition audit 90% ready on paper and exposed on the floor.</p>
+<p>A 0 to 3 scale beats yes/no because it separates "we have a procedure" from "it works": a yes/no checklist scores both the same. Score 2 is the one that keeps a gap analysis honest. Most systems do most things; what they lack is the record that shows it. Scoring "we do that" as a 3 is how organizations arrive at the transition audit 90% ready on paper and exposed on the floor.</p>
 </section>
 <section id="weight"><h2>Weighting by what changed</h2>
 <p>A flat score treats every sub-clause the same. The auditor will not. The transition audit spends its time on the changes, so each row carries a weight set by how the 2026 edition changed it:</p>
@@ -129,14 +139,18 @@ footer .author{display:block;font-size:14px;color:#94A3B8;padding:12px 24px 0}
 <p>Severity is the distance from conforming, times the weight: (3 minus the score) times the weight. A new requirement scored 1 has severity 6. An unchanged requirement scored 1 has severity 2. The first is a priority gap; the second is a gap. Rank the action plan by severity and the first page of it is the transition audit's first day.</p>
 <div class="callout"><p>The rule of thumb that falls out of the arithmetic: any changed requirement scored 0 or 1 is a priority gap, and no unchanged requirement is, whatever its score. Severity 4 and above is the line.</p></div>
 </section>
-<section id="afternoon"><h2>Doing it in an afternoon</h2>
+<section id="afternoon"><h2>The method, step by step</h2>
+<p>An afternoon for a single-site system that has read the change list; a day with the process owners in the room.</p>
 <ol>
-<li><strong>Read the change list first.</strong> Every confirmed 2015 to 2026 change in plain words, with what to check in your own system. Scoring before reading it means scoring against the 2015 edition from memory.</li>
+<li><strong>Run the five <a href="/iso-9001-2026/document-control-checklist/">search strings</a> through every document first:</strong> 10.3, Annex B, outputs, 6.1 with no sub-clause, and 2015. Fix the hits before scoring, or they score as gaps in every clause they touch.</li>
+<li><strong>Read the change list.</strong> Every confirmed 2015 to 2026 change in plain words, with what to check in your own system. Scoring before reading it means scoring against the 2015 edition from memory.</li>
 <li><strong>Score the changed rows first,</strong> New and Expanded, then Reworded. They carry the weight, and they are where the evidence is thinnest. Unchanged rows last, quickly.</li>
 <li><strong>Write the evidence, not the opinion.</strong> Beside every score of 2 or 3, the record that proves it: the register name, the procedure number, the date of the last review. A score with no evidence beside it is a 1.</li>
 <li><strong>Describe each gap in one line,</strong> as the auditor would write it: what the requirement asks for, what the evidence shows, the difference.</li>
 <li><strong>Assign an action, an owner and a date</strong> to every gap, and a control level to every action: eliminate, substitute, engineer, separate, procedure, train. If the average lands on procedure and train, the transition is being documented, not implemented.</li>
 <li><strong>Have the process owners check their rows.</strong> A gap analysis scored alone is scored against the manual. The auditor audits the floor.</li>
+<li><strong>Sort by severity.</strong> The top of the list is the action plan; the first ten rows are the transition project.</li>
+<li><strong>Set the readiness target and the date, and re-score monthly</strong> until the audit. The trend is the number management review watches.</li>
 </ol>
 </section>
 <section id="example"><h2>Two worked rows</h2>
@@ -146,6 +160,14 @@ footer .author{display:block;font-size:14px;color:#94A3B8;padding:12px 24px 0}
 </tbody></table>
 <p>The first row is a register that never recorded the climate-change determination as an explicit decision: one line to add. The second is a risk register with forty risks and no opportunities, which is the finding most organizations receive first in 2026 and which lands on leadership, since the leadership clause now asks top management to promote opportunity-based thinking. Same system, two gaps, one afternoon, and the ranking says which one to open on Monday.</p>
 </section>
+<section id="produces"><h2>What a finished gap analysis produces</h2>
+<ul>
+<li><strong>The ranked gap list:</strong> every sub-clause scored, weighted and sorted by severity, with the gap described in one line each.</li>
+<li><strong>The action plan,</strong> with an owner, a date and a control level on every gap.</li>
+<li><strong>The readiness number and its trend,</strong> overall and by clause, re-scored to the audit.</li>
+<li><strong>The evidence register:</strong> the record beside every 2 and 3, which is what the auditor asks for at the opening meeting.</li>
+</ul>
+</section>
 <section id="after"><h2>What to do with the result</h2>
 <ul>
 <li><strong>The action plan,</strong> ranked by severity, with control levels. The first ten rows are the transition project.</li>
@@ -153,7 +175,7 @@ footer .author{display:block;font-size:14px;color:#94A3B8;padding:12px 24px 0}
 <li><strong>The transition plan,</strong> working back from your recertification date rather than from the end of the window. <a href="/iso-9001-2026/transition-deadline/">Most deadlines are earlier than 2029.</a></li>
 <li><strong>The document sweep,</strong> in parallel: the <a href="/iso-9001-2026/document-control-checklist/">search strings</a> that find every procedure still pointing at a clause number that moved.</li>
 </ul>
-<div class="cta"><h3>The kit does the arithmetic</h3><p>Fifty-seven sub-clauses with the 2015 requirement in plain words beside the 2026 change, the weights and severity computed, status and days-to-due flags, the change log with a what-to-check column, the gap map, the ranked action plan with control levels, the transition plan and a dashboard that reads the numbers back to you. Verified against the published text. $57, Excel, no macros.</p><a class="btn btn-amber" href="/tools/iso-9001-gap-analysis/">See the Transition Kit</a><a class="btn btn-ghost" href="/iso-9001-2026/what-changed/">Read the change list first</a></div>
+<div class="cta" id="spreadsheet"><h3>Doing it in a spreadsheet: the kit does the arithmetic</h3><p>Fifty-seven sub-clauses with the 2015 requirement in plain words beside the 2026 change, the weights and severity computed, status and days-to-due flags, the change log with a what-to-check column, the gap map, the ranked action plan with control levels, the transition plan and a dashboard that reads the numbers back to you. Verified against the published text. $57, Excel, no macros. The five search strings on their own, with where to run them, are on the free <a href="/iso-9001-2026/document-control-checklist/">document control checklist</a> page.</p><a class="btn btn-amber" href="/tools/iso-9001-gap-analysis/">See the Transition Kit</a><a class="btn btn-ghost" href="/iso-9001-2026/what-changed/">Read the change list first</a></div>
 </section>
 <section id="faq"><h2>Questions</h2><details><summary>Is a certification body's free gap analysis checklist enough?</summary><p>It finds gaps and stops there. A checklist cannot tell you that a modest gap on a requirement that changed in 2026 outranks a large gap on one that did not, and that is the judgment a transition audit tests. Score and weight, then rank.</p></details><details><summary>How long does an ISO 9001:2026 gap analysis take?</summary><p>An afternoon for a mature single-site system if the change log has been read first: fifty-seven sub-clauses at three to five minutes each. Multi-site systems and systems that have drifted from the manual take longer, mostly in finding the evidence.</p></details><details><summary>Who should do it?</summary><p>The quality manager scores; the process owners supply the evidence for their rows. A gap analysis scored alone in an office is scored against the manual, not against the floor, and the auditor audits the floor.</p></details><details><summary>Do I need the standard to do a gap analysis?</summary><p>Yes. The requirements are in your organization's licensed copy of ISO 9001:2026. A gap analysis tool describes each requirement in its own words as a pointer; the scoring is done against the text, and the auditor will expect you to have it.</p></details></section>
 <section class="related"><h3>More on the ISO 9001:2026 transition</h3><ul><li><a href="/iso-9001-2026/what-changed/">Everything that changed in ISO 9001:2026, clause by clause</a></li><li><a href="/iso-9001-2026/transition-deadline/">Find your real transition deadline</a></li><li><a href="/iso-9001-2026/risks-and-opportunities/">Risks and opportunities: now two requirements</a></li><li><a href="/audit-day/">Audit Day: the pocket guide for your process owners</a></li></ul></section>
