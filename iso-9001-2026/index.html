@@ -405,7 +405,7 @@ $('ai-go').addEventListener('click',function(){
 <script>(function(){var b=document.getElementById("menu"),n=document.getElementById("mnav");if(!b||!n)return;b.addEventListener("click",function(){var o=n.hasAttribute("hidden");if(o)n.removeAttribute("hidden");else n.setAttribute("hidden","");n.classList.toggle("open",o);b.setAttribute("aria-expanded",o?"true":"false");b.textContent=o?"Close":"Menu"});var t=document.getElementById("theme"),m=n.querySelector(".mtoggle");if(t&&m){var f=function(){m.textContent=t.textContent+" theme"};f();m.addEventListener("click",function(){t.click();f()})}})();</script>
 <script>document.addEventListener("click",function(e){var a=e.target.closest("a[data-event]");if(!a||typeof gtag!=="function")return;gtag("event",a.dataset.event,{page_slug:a.dataset.page,link_url:a.href});});
 /* Email list. Set LIST_URL to the list's form endpoint (Buttondown: https://buttondown.com/api/emails/embed-subscribe/USERNAME). Empty = the box stays hidden. */
-var LIST_URL='';
+var LIST_URL='https://buttondown.com/api/emails/embed-subscribe/qualityfieldguides';
 (function(){var g=function(i){return document.getElementById(i)},k=g('keep'),f=g('keep-form');if(!k||!f||!LIST_URL)return;f.action=LIST_URL;k.hidden=false;f.addEventListener('submit',function(){if(typeof gtag==='function')gtag('event','email_signup',{page_slug:'iso-9001-2026-readout'});g('keep-msg').textContent='Check your inbox for the confirmation; the plan follows it.';});})();
 </script>
 </body></html>
